@@ -6,15 +6,9 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SearchComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, SearchComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
