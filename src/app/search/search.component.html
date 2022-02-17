@@ -1,8 +1,23 @@
-<div class="field">
-  <p class="control has-icons-left has-icons-right">
-    <input class="input" type="text" placeholder="Enter Twitter Username" />
-    <span class="icon is-large is-left">
-      <i class="fas fa-at"></i>
-    </span>
-  </p>
-</div>
+<nav class="level">
+  <div class="level-right inputDivs">
+    <div class="field control has-icons-left searchInput">
+      <input
+        class="input"
+        type="text"
+        placeholder="Enter Twitter Username"
+        (change)="onChangeEvent($event)"
+      />
+      <span class="icon is-large is-left">
+        <i class="fas fa-at"></i>
+      </span>
+    </div>
+  </div>
+
+  <div class="level-left inputDivs">
+    <div class="field control searchInput">
+      <input class="input" type="text" placeholder="Filter..." />
+    </div>
+  </div>
+</nav>
+
+<p>{{ input }}</p>
